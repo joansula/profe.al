@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profe.al - Joan Sula</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet"  href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mx-1 mb-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand mr-auto mr-2" href="index.html">Profe.al</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item mr-2">
+                <a class="nav-link " href="#">E-learning</a>
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link" href="#">Si funksionon</a>
+              </li>
+              <li class="nav-item mr-2 ">
+                <a class="nav-link" href="regjistrohu.html">Regjistrohu</a>
+              </li>
+
+              <li class="nav-item dropdown mr-2">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown1"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Asistenca
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="#">Student&Prinder FAQ</a>
+                  <a class="dropdown-item" href="#">Profesor FAQ</a>
+                  <a class="dropdown-item" href="#"
+                    >Ke nevoje per ndihme? 06xxxxxxxx</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item dropdown mr-2">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown2"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Kycu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <a class="dropdown-item" href="kycu.html">Kycu si student/prind</a>
+                  <a class="dropdown-item" href="kycu.html">Kycu si profesor</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="shadow-md rounded  py-2 mb-2">
+        <div class="row mb-2">
+            <div class="col-md-5">
+                <label class="text-uppercase text-muted small font-weight-bold" for="first-name">
+                    Lenda:
+                </label>
+                <input class="form-control" id="first-name" type="text" placeholder="4">
+            </div>
+            <div class="col-md-5">
+                <label class="text-uppercase text-muted small font-weight-bold" for="last-name">
+                    Niveli:
+                </label>
+                <input class="form-control" id="last-name" type="text" placeholder="20">
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-primary  mt-4" type="button">
+                    Kërko
+                </button>
+             </div>
+        </div>
+    </div>
+    
+      
+
+
+      <div class="row">
+        <div class="col">
+          <!-- Button for small screens -->
+          <a class="card btn btn-lg btn-block d-lg-none" id="toggleFiltersBtn">
+            🔍 Filters
+          </a>
+          <!-- Card structure -->
+          <div class="card mb-3 d-none d-lg-block" id="filtersCard">
+            <div class="card-body">
+              <h5 class="card-title text-center mb-4">Kerkoni me shume detaje</h5>
+              <p class="card-text">
+                <form>
+                  <label for="name" class="mb-2"><b>Profesori:</b></label><br>
+                  <input type="text" id="name" name="name" placeholder="Emri ose te dhena te tjera" class="mb-3">
+                  <label for="customRange" class="form-label"><b>Zgjidh tarifen:</b></label>
+                  <input type="range" class="form-range" id="customRange" min="0" max="100" value="50">
+                  <span id="rangeValue">0$ - 50$</span> 
+                  <p><b>Profili i mesuesit:</b></p>
+                  <input type="checkbox" id="ops1" name="ops1" value="me-eksperience">
+                  <label for="vehicle1"> Me eksperience</label><br>
+                  <input type="checkbox" id="ops2" name="ops2" value="i-verifikuar">
+                  <label for="vehicle2"> I verifikuar</label><br>
+                  <input type="checkbox" id="ops3" name="ops3" value="me-foto">
+                  <label for="vehicle3"> Me foto</label><br>
+                  <p><b>Gjinia:</b></p>
+                  <input type="radio" id="m" name="gender" value="mashkull">
+                  <label for="html">Mashkull</label><br>
+                  <input type="radio" id="m" name="gender" value="femer">
+                  <label for="css">Femer</label><br>
+                  <div class="text-center">
+                  <input type="submit" value="Submit" class="btn btn-primary btn-block mt-3" >
+                </div>
+                </form>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+
+
+
+
+        <div class="col-md-8">
+          <div class="card mb-3 " id="profesor-card">
+            <div class="card-body d-flex">
+              <img class="rounded w-25 mx-2 d-none d-md-block" src="blankpfp.jpg">
+              <div class="card-text">
+                <h3>Devi Dema</h3>
+                <p>Description:<span class="bio-description">Un jam Devi, jam nxenes te politekniku. Lendet shkencore jan pasioni im.</span></p>
+                <p>Lendet:<span class="lendet-description">Matematike, Fizike, Kimi</span></p>
+                <p>Mesime te pranuara:<span class="mesime-description">23</span></p>
+                <p>Pranon ne:<span class="mesime-description">8:00 - 17:00</span></p>
+                <p>Rating:<span class="mesime-description">★★★★☆</span></p>
+              </div>
+              <div class="col-md-4 d-flex"> 
+                <div class="card text-center w-100 d-flex flex-column justify-content-center border-0"> 
+                  <div class="card-body">
+                    <div class="card-text mt-5">
+                      <p style="color: gray;">Duke nisur nga:</p>
+                      <h4>12$/ore</h4>
+                    </div>
+                    <a class="btn btn-primary">Kontakto</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 " id="profesor-card">
+            <div class="card-body d-flex">
+              <img class="rounded w-25 mx-2 d-none d-md-block" src="blankpfp.jpg">
+              <div class="card-text">
+                <h3>Ardenis Hazizi</h3>
+                <p>Description:<span class="bio-description">Pershendetje, jam Denisi, programues ne kompanine Amazon per 15 vite.</span></p>
+                <p>Lendet:<span class="lendet-description">Programim, Cs</span></p>
+                <p>Mesime te pranuara:<span class="mesime-description">16</span></p>
+                <p>Pranon ne:<span class="mesime-description">10:00 - 20:00</span></p>
+                <p>Rating:<span class="mesime-description">★★☆☆☆</span></p>
+              </div>
+              <div class="col-md-4 d-flex"> 
+                <div class="card text-center w-100 d-flex flex-column justify-content-center border-0"> 
+                  <div class="card-body">
+                    <div class="card-text mt-5">
+                      <p style="color: gray;">Duke nisur nga:</p>
+                      <h4>27$/ore</h4>
+                    </div>
+                    <a class="btn btn-primary">Kontakto</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 " id="profesor-card">
+            <div class="card-body d-flex">
+              <img class="rounded w-25 mx-2 d-none d-md-block" src="blankpfp.jpg">
+              <div class="card-text">
+                <h3>Asip Bajrami</h3>
+                <p>Description:<span class="bio-description">Jam mesues i gjuhes shqipe per 30 vite. Ofroj kurse per provimet e lirimit.</span></p>
+                <p>Lendet:<span class="lendet-description">Gjuhe shqipe, Letersi</span></p>
+                <p>Mesime te pranuara:<span class="mesime-description">8</span></p>
+                <p>Pranon ne:<span class="mesime-description">12:00 - 23:30</span></p>
+                <p>Rating:<span class="mesime-description">★★★★★</span></p>
+              </div>
+              <div class="col-md-4 d-flex"> 
+                <div class="card text-center w-100 d-flex flex-column justify-content-center border-0"> 
+                  <div class="card-body">
+                    <div class="card-text mt-5">
+                      <p style="color: gray;">Duke nisur nga:</p>
+                      <h4>18$/ore</h4>
+                    </div>
+                    <a class="btn btn-primary">Kontakto</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <footer class="container">
+          <hr>
+          <div class="row justify-content-center text-center">
+            <div class="col-md-auto">
+              <h5>E-learning</h5>
+              <ul class="list-unstyled small">
+                <li>Kush Jemi</li>sss
+                <li>Kushtet & Shërbimet</li>
+                <li>Privacia</li>
+                <li>Opsionet Cookies</li>
+                <li>Opsionet Cookies</li>
+              </ul>
+            </div>
+
+            <div class="col-md-auto">
+              <h5>Student</h5>
+              <ul class="list-unstyled small">
+                <li>Student Faq</li>
+                <li>Tutor Faq</li>
+                <li>Blog</li>
+                <li>Leksionet Online</li>
+                <li>Leksionet Online</li>
+              </ul>
+            </div>
+            <div class="col-md-auto">
+              <h5>Na Kontaktoni</h5>
+              <ul class="list-unstyled small">
+                <li>Telefoni: +1 (123) 456-7890</li>
+                <li>Adresa: Rruga Brigada VIII Ndertesa 8</li>
+                <li>Orari: Mon-Fri: 9:00 AM - 5:00 PM</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 mt-3">
+              <p class="text-center small mb-0">© 2024 E-learning. Të gjitha të drejtat të rezervuara.</p>
+            </div>
+          </div>
+          <hr>
+        </footer>
+
+        
+        
+        
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

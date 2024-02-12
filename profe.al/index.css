@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+.form-label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form-range {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#rangeValue {
+  display: block;
+  text-align: center;
+}
+
+.lendet-description {
+  text-decoration: underline;
+  text-decoration-color: gray;
+  color: gray;
+  margin-left: 10px;
+}
+
+.mesime-description {
+  color: gray;
+  margin-left: 10px;
+}
+.bio-description {
+  font-size: smaller;
+  color: gray;
+  margin-left: 10px;
+}
+

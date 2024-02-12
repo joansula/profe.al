@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profe.al - Regjistrohu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mx-1 mb-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand mr-auto mr-2" href="index.html">Profe.al</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item mr-2">
+                <a class="nav-link" href="#">E-learning</a>
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link" href="#">Si funksionon</a>
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link" href="regjistrohu.html">Regjistrohu</a>
+              </li>
+
+              <li class="nav-item dropdown mr-2">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown1"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Asistenca
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="#">Student&Prinder FAQ</a>
+                  <a class="dropdown-item" href="#">Profesor FAQ</a>
+                  <a class="dropdown-item" href="#"
+                    >Ke nevoje per ndihme? 06xxxxxxxx</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item dropdown mr-2">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown2"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Kycu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <a class="dropdown-item" href="#">Kycu si student/prind</a>
+                  <a class="dropdown-item" href="#">Kycu si profesor</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="row">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="card" style="width: 25rem">
+            <div class="card-body">
+              <h5 class="card-title text-center">Sign in</h5>
+              <hr />
+              <form>
+                <div class="mb-3">
+                  <label for="inputEmail" class="form-label"
+                    >*Emer Mbiemer</label
+                  >
+                  <input type="email" class="form-control" id="inputEmail" />
+                </div>
+                <div class="mb-3">
+                  <label for="inputEmail" class="form-label"
+                    >*Email address</label
+                  >
+                  <input type="email" class="form-control" id="inputEmail" />
+                </div>
+                <div class="mb-3">
+                  <label for="inputPassword" class="form-label"
+                    >*Fjalekalimi</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="inputPassword"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="inputPassword" class="form-label"
+                    >*Konfirmo fjalekalimin</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="inputPassword"
+                  />
+                </div>
+                <div class="mb-3">
+                  <p>*Gender:</p>
+                  <input type="radio" id="male" name="gender" value="male" />
+                  <label for="male" class="text-secondary">Male</label>
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="female"
+                  />
+                  <label for="female" class="text-secondary">Female</label>
+                </div>
+                <div class="mb-3">
+                  <label for="inputphone" class="form-label">*Phone:</label>
+                  <input
+                    type="tel"
+                    id="inputphone"
+                    class="form-control"
+                    name="phone"
+                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="birthday" class="form-label">*Birthday:</label>
+                  <input
+                    type="date"
+                    id="birthday"
+                    name="birthday"
+                    class="form-control"
+                  />
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary">
+                    Register
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="container">
+        <hr />
+        <div class="row justify-content-center text-center">
+          <div class="col-md-auto">
+            <h5>E-learning</h5>
+            <ul class="list-unstyled small">
+              <li>Kush Jemi</li>
+              <li>Kushtet & Shërbimet</li>
+              <li>Privacia</li>
+              <li>Opsionet Cookies</li>
+              <li>Opsionet Cookies</li>
+            </ul>
+          </div>
+
+          <div class="col-md-auto">
+            <h5>Student</h5>
+            <ul class="list-unstyled small">
+              <li>Student Faq</li>
+              <li>Tutor Faq</li>
+              <li>Blog</li>
+              <li>Leksionet Online</li>
+              <li>Leksionet Online</li>
+            </ul>
+          </div>
+          <div class="col-md-auto">
+            <h5>Na Kontaktoni</h5>
+            <ul class="list-unstyled small">
+              <li>Telefoni: +1 (123) 456-7890</li>
+              <li>Adresa: Rruga Brigada VIII Ndertesa 8</li>
+              <li>Orari: Mon-Fri: 9:00 AM - 5:00 PM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mt-3">
+            <p class="text-center small mb-0">
+              © 2024 E-learning. Të gjitha të drejtat të rezervuara.
+            </p>
+          </div>
+        </div>
+        <hr />
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
